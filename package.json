@@ -1,0 +1,23 @@
+{
+  "name": "node_modules_ls",
+  "version": "1.0.0",
+  "description": "prints a list of all node_modules + versions, handy for comparing module trees",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "node_modules_ls": "index.js",
+    "ls_node_modules": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanstevens/node_modules_ls.git"
+  },
+  "author": "ryan_stevens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanstevens/node_modules_ls/issues"
+  },
+  "homepage": "https://github.com/ryanstevens/node_modules_ls#readme"
+}
