@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ryanstevens/node_modules_ls/issues"
   },
-  "homepage": "https://github.com/ryanstevens/node_modules_ls#readme"
+  "homepage": "https://github.com/ryanstevens/node_modules_ls#readme",
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  }
 }
