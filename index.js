@@ -10,7 +10,9 @@ const project = buildTree(folder);
 print(project);
 
 function print(module, parent = '') {
-  console.log(parent + '/' + module.name + '@' + module.version);
+  const name = module.name || '';
+  const version = module.version || '';
+  console.log(parent + '/' + name + '@' + version);
   if (module.node_modules) {
     module.node_modules.forEach(mod => print(mod, parent + '/' + module.name));
   }
@@ -23,7 +25,9 @@ function buildTree(folder) {
     const packageJSON = require(folder + '/package.json');;
     module.name = packageJSON.name;
     module.version = packageJSON.version;
-  } else return null;
+  } else {
+    module.name = folder.split('/').pop();
+  }
 
   const node_modules_dir = folder + '/node_modules';
   if (fs.existsSync(node_modules_dir)) {

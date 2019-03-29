@@ -1,6 +1,6 @@
 {
   "name": "node_modules_ls",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "prints a list of all node_modules + versions, handy for comparing module trees",
   "main": "index.js",
   "scripts": {
